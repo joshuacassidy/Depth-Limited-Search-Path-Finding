@@ -33,8 +33,8 @@ public class DepthLimitedSearchTest {
 
     @org.junit.Test
     public void searchCase2() throws Exception {
-        Vertex found = depthLimitedSearch.search(vertices.get(0), vertices.get(5), 1);
-        assertEquals(found, null);
+        Vertex found = depthLimitedSearch.search(vertices.get(0), vertices.get(2), 1);
+        assertEquals(found, "c");
     }
 
 }
