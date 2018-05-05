@@ -18,7 +18,8 @@ public class Main {
 
 
             DepthLimitedSearch depthLimitedSearch = new DepthLimitedSearch();
-            System.out.println(depthLimitedSearch.search(vertex1, vertex4, 3));
+            int depth = 3;
+            System.out.println(depthLimitedSearch.search(vertex1, vertex4, depth) == null ? "Vertex 4 could not be found" : "Vertex 4 could be found when the depth is: " +  depth);
 
         }
 
